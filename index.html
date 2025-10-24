@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Amine Ben Salah — Portfolio</title>
+  <meta name="description" content="Portfolio professionnel de Mohamed Amine Ben Salah — projets, compétences et contact." />
+  <meta name="author" content="Mohamed Amine Ben Salah" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#" aria-label="Aller en haut">
+        <div class="logo">MABS</div>
+        <div>
+          <div class="name">Mohamed Amine Ben Salah</div>
+          <div class="subtitle">Titre professionnel — ex: Développeur • Designer • Data Scientist</div>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main role="main" class="card" aria-labelledby="intro-title">
+      <section class="hero" aria-describedby="intro-desc">
+        <div class="intro" id="intro-desc">
+          <h1 id="intro-title">Bonjour — je suis <span class="accent">Mohamed Amine Ben Salah</span></h1>
+          <p class="lead">Je conçois et réalise des expériences digitales robustes et esthétiques. Spécialité : <strong>Front-end & UI</strong>, architecture d'applications et design d'interfaces.</p>
+
+          <p class="muted">Voici une sélection de projets professionnels et personnels. Le site est une version initiale — rapide, légère, et facile à déployer.</p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact" title="Me contacter">Contactez-moi</a>
+            <a class="btn btn-ghost" href="#projets" title="Voir mes projets">Voir les projets</a>
+          </div>
+
+          <div class="meta-line">
+            <strong>Localisation :</strong> Ville, Pays &nbsp; • &nbsp; <strong>Disponibilité :</strong> Freelance / CDI
+          </div>
+        </div>
+
+        <aside class="profile card" aria-label="Carte de profil">
+          <div class="avatar" aria-hidden="true">MABS</div>
+          <div class="meta">
+            <h3>Mohamed Amine Ben Salah</h3>
+            <p>Développeur · Designer · Créateur</p>
+            <div class="links">
+              <a href="#" class="btn btn-ghost small">Résumé PDF</a>
+              <a href="#" class="btn btn-ghost small">LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Projets -->
+      <section id="projets" class="section">
+        <h2>Projets récents</h2>
+        <div class="projects" role="list">
+          <article class="project" role="listitem" aria-labelledby="p1">
+            <h4 id="p1">Projet A — Plateforme web</h4>
+            <p>Application web pour gérer ... (bref descriptif). Rôle : Lead front-end + UI.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Design System</span>
+            </div>
+          </article>
+
+          <article class="project" role="listitem" aria-labelledby="p2">
+            <h4 id="p2">Projet B — Site vitrine</h4>
+            <p>Refonte d’un site vitrine performant, SEO et temps de chargement optimisés.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">Performance</span>
+            </div>
+          </article>
+
+          <article class="project" role="listitem" aria-labelledby="p3">
+            <h4 id="p3">Projet C — Dashboard</h4>
+            <p>Tableau de bord analytics avec visualisation temps réel et UX claire.</p>
+            <div class="tags">
+              <span class="tag">D3</span><span class="tag">UX</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section id="competences" class="section">
+        <h2>Compétences</h2>
+        <div class="skills" role="list">
+          <span class="skill" role="listitem">HTML & CSS</span>
+          <span class="skill" role="listitem">JavaScript</span>
+          <span class="skill" role="listitem">React</span>
+          <span class="skill" role="listitem">Design Systems</span>
+          <span class="skill" role="listitem">Accessibilité (a11y)</span>
+          <span class="skill" role="listitem">Performance web</span>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+
+        <div class="grid-two">
+          <div class="card">
+            <form id="contactForm" action="mailto:you@example.com" method="post" enctype="text/plain" aria-label="Formulaire de contact">
+              <label>
+                <span class="label">Nom</span>
+                <input name="name" type="text" placeholder="Votre nom" required>
+              </label>
+
+              <label>
+                <span class="label">Email</span>
+                <input name="email" type="email" placeholder="votre@exemple.com" required>
+              </label>
+
+              <label>
+                <span class="label">Message</span>
+                <textarea name="message" placeholder="Bonjour — je souhaite..." required></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="reset" class="btn btn-ghost">Effacer</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="card">
+            <h4>Coordonnées</h4>
+            <p class="muted">Email : <a href="mailto:you@example.com" class="accent-link">you@example.com</a></p>
+            <p class="muted">Téléphone : +33 6 12 34 56 78</p>
+            <p class="muted">Vous pouvez aussi me retrouver sur : <br/>
+              <a href="#" class="accent-link">LinkedIn</a> • <a href="#" class="accent-link">GitHub</a>
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Mohamed Amine Ben Salah — Conçu avec soin • Disponible sur Git
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      const action = this.getAttribute('action') || '';
+      if(action.startsWith('mailto:')){
+        return; // laisser mailto ouvrir le client mail
+      }
+      e.preventDefault();
+      alert('Formulaire soumis (simulation). Configurez un backend ou action mailto pour envoyer réellement.');
+    });
+  </script>
+</body>
+</html>
